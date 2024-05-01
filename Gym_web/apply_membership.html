@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>User Management Page</title>
+	
+
+	<style>
+
+		.container {
+			margin: 0 auto;
+			max-width: 800px;
+			padding: 20px;
+		}
+		
+		h1 {
+			text-align: center;
+		}
+		
+		h2 {
+			margin-top: 30px;
+		}
+		
+		form {
+			margin-top: 20px;
+			display: flex;
+			flex-direction: column;
+		}
+		
+		label {
+			margin-bottom: 10px;
+		}
+		
+		input, select {
+			padding: 10px;
+			margin-bottom: 20px;
+			border-radius: 5px;
+			border: none;
+			box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+		}
+		
+		button.btn {
+			padding: 10px;
+			background-color: #4CAF50;
+			color: white;
+			border: none;
+			border-radius: 5px;
+			cursor: pointer;
+		}
+		
+		button.btn:hover {
+			background-color: #3e8e41;
+		}
+		
+		* {
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+		}
+		
+		body {
+			background-color: #f4f4f4;
+			font-family: Arial, sans-serif;
+		}
+		
+		.container {
+			max-width: 800px;
+			margin: 50px auto;
+			padding: 20px;
+			background-color: #fff;
+			box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+		}
+		
+		h1 {
+			text-align: center;
+			margin-bottom: 20px;
+		}
+		
+		h2 {
+			margin-top: 30px;
+			margin-bottom: 10px;
+			font-size: 24px;
+		}
+		
+		form {
+			margin-bottom: 20px;
+		}
+		
+		label {
+			display: block;
+			margin-bottom: 5px;
+			font-weight: bold;
+		}
+		
+		input[type="text"],
+		input[type="email"],
+		input[type="password"],
+		select {
+			display: block;
+			width: 100%;
+			padding: 10px;
+			margin-bottom: 10px;
+			border-radius: 5px;
+			border: 1px solid #ccc;
+			font-size: 16px;
+		}
+		
+		select {
+			appearance: none;
+			background-image: url('https://cdn4.iconfinder.com/data/icons/ionicons/512/icon-ios7-arrow-down-512.png');
+			background-repeat: no-repeat;
+			background-position: right 10px center;
+			background-size: 20px;
+		}
+		
+		button.btn {
+			display: block;
+			padding: 10px;
+			margin-top: 20px;
+			background-color: #007bff;
+			color: #fff;
+			border: none;
+			border-radius: 5px;
+			font-size: 16px;
+			cursor: pointer;
+		}
+		
+		button.btn:hover {
+			background-color: #0069d9;
+		}
+		
+		ul {
+			margin-bottom: 20px;
+		}
+		
+		li {
+			margin-left: 20px;
+		}
+		
+		/* Payment form */
+		#payment-form label {
+			display: inline-block;
+			margin-right: 10px;
+			margin-bottom: 5px;
+			font-weight: normal;
+		}
+		
+		#payment-form input[type="text"] {
+			display: inline-block;
+			width: 50%;
+			margin-right: 10px;
+		}
+		
+		#payment-form button {
+			margin-top: 10px;
+		}
+		
+		@media only screen and (max-width: 600px) {
+			.container {
+				margin: 20px;
+				padding: 10px;
+			}
+			h2 {
+				font-size: 20px;
+			}
+			input[type="text"],
+			input[type="email"],
+			input[type="password"],
+			select {
+				font-size: 14px;
+			}
+		}
+		
+		
+		
+		</style>
+</head>
+<body>
+	<div class="container">
+		<h1></h1>
+		<h2>Apply for Membership</h2>
+		<form action="#" method="POST">
+			<label for="name">Height:</label>
+			<input type="text" id="height" name="height" required placeholder="cm">
+
+			<label for="email">Weight:</label>
+			<input type="email" id="weight/kg" name="weight/kg" required placeholder="kg">
+
+			<label for="gender">Gender:</label>
+			<select id="gender" name="gender" required >
+			<option value="male">Male</option>
+			<option value="female">Female</option>
+			</select>
+
+			<label for="membership">Membership:</label>
+			<select id="membership" name="membership" required>
+				<option value="">Select a Membership Option</option>
+				<option value="basic">Basic</option>
+				<option value="premium">Premium</option>
+				<option value="pro">Pro</option>
+			</select>
+
+			<button type="submit" class="btn">Apply</button>
+		</form>
+
+		<!-- <h2>View Workout Plan</h2>
+		<p>As a member, you have access to the following workout plans:</p>
+		<ul>
+			<li>Beginner's Workout Plan</li>
+			<li>Intermediate Workout Plan</li>
+			<li>Advanced Workout Plan</li>
+		</ul>
+
+		<h2>Make a Payment</h2>
+		<form action="#" method="POST">
+			<label for="cardnumber">Card Number:</label>
+			<input type="text" id="cardnumber" name="cardnumber" required>
+
+			<label for="expiration">Expiration Date:</label>
+			<input type="text" id="expiration" name="expiration" required>
+
+			<label for="cvv">CVV:</label>
+			<input type="text" id="cvv" name="cvv" required>
+
+			<button type="submit" class="btn">Pay Now</button>
+		</form> -->
+	</div>
+</body>
+
+</html>
